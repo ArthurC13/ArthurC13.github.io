@@ -5,20 +5,22 @@
   <title>Arthur Chen | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script src="script.js"></script>
 <body>
-
   <header>
-    <h1>Arthur Chen</h1>
-    <p>Game lover and language enthusiast on the way to become an indie developer</p>
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="tagline"></p>
+
+    <div class="lang-switch">
+      <button onclick="setLanguage('en')">EN</button>
+      <button onclick="setLanguage('ja')">日本語</button>
+      <button onclick="setLanguage('zh')">中文</button>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I am a student with experience in Python and beginner game development.
-      I enjoy building small projects to explore programming concepts and
-      interactive design.
-    </p>
+  <section>
+    <h2 data-i18n="about_title"></h2>
+    <p data-i18n="about_text"></p>
   </section>
 
   <section id="projects">
