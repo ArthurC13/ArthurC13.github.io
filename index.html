@@ -2,46 +2,206 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arthur Chen | Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
-<script src="script.js"></script>
 <body>
   <header>
-    <h1 data-i18n="name"></h1>
-    <p data-i18n="tagline"></p>
-
+    <h1 id="name"></h1>
+    <p id="tagline"></p>
     <div class="lang-switch">
-      <button onclick="setLanguage('en')">EN</button>
-      <button onclick="setLanguage('ja')">日本語</button>
-      <button onclick="setLanguage('zh')">中文</button>
+      <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+      <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+      <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
     </div>
   </header>
 
-  <section>
-    <h2 data-i18n="about_title"></h2>
-    <p data-i18n="about_text"></p>
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">❤️</span>
+      <span id="about_title"></span>
+    </h2>
+    <p id="about_text" class="placeholder-text"></p>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
+  <section class="section gradient-peach">
+    <h2 class="section-title">
+      <span class="icon">✨</span>
+      <span id="philosophy_title"></span>
+    </h2>
+    <p id="philosophy_text" class="placeholder-text"></p>
+  </section>
 
-    <div class="project">
-      <h3>Game Title</h3>
-      <p>A small Python game built using Pygame.</p>
-      <p><strong>Tools:</strong> Python, Pygame</p>
-      <a href="https://github.com/ArthurC13/project-repo" target="_blank">
-        View on GitHub
+  <section class="section gradient-blue">
+    <h2 class="section-title">
+      <span class="icon">🌍</span>
+      <span id="languages_title"></span>
+    </h2>
+    <p id="languages_subtitle" class="subtitle"></p>
+    <p id="languages_intro" class="placeholder-text"></p>
+    <div class="info-box">
+      <p><strong id="language_native"></strong> [Your native language]</p>
+      <p><strong id="language_fluent"></strong> [Languages you speak fluently]</p>
+      <p><strong id="language_learning"></strong> [Languages you are learning]</p>
+    </div>
+    <p id="languages_value" class="placeholder-text"></p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎮</span>
+      <span id="creative_title"></span>
+    </h2>
+    
+    <h3 id="game_projects_subtitle" class="subsection-title"></h3>
+    
+    <div class="project-card">
+      <h4 id="project1_title"></h4>
+      <p id="project1_desc" class="placeholder-text"></p>
+      <p><strong id="project1_role"></strong></p>
+      <p class="highlight">
+        <strong>✨</strong> <span id="project1_highlight" class="placeholder-text"></span>
+      </p>
+      <a href="https://github.com/ArthurC13/project-repo" target="_blank" class="btn">
+        <span id="view_github"></span>
       </a>
     </div>
 
+    <h3 id="art_projects_subtitle" class="subsection-title"></h3>
+    <p id="art_note" class="info-box-yellow placeholder-text"></p>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: ccyarthur@email.com</p>
-    <p>GitHub: <a href="https://github.com/ArthurC13">ArthurC13</a></p>
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">📱</span>
+      <span id="ui_study_title"></span>
+    </h2>
+    <p id="ui_study_subtitle" class="subtitle"></p>
+    <p id="ui_study_intro" class="placeholder-text"></p>
+
+    <div class="project-card">
+      <h4 id="ui_study1_title" class="ui-title"></h4>
+      <p id="ui_study1_desc" class="placeholder-text"></p>
+      <button class="btn-secondary"><span id="view_design_1">View Design</span></button>
+    </div>
+
+    <div class="project-card">
+      <h4 id="ui_study2_title" class="ui-title"></h4>
+      <p id="ui_study2_desc" class="placeholder-text"></p>
+      <button class="btn-secondary"><span id="view_design_2">View Design</span></button>
+    </div>
   </section>
 
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎨</span>
+      <span id="process_title"></span>
+    </h2>
+    <div class="process-grid">
+      <div class="process-card">
+        <h4 id="process_step1"></h4>
+        <p id="process_step1_desc" class="placeholder-text"></p>
+      </div>
+      <div class="process-card">
+        <h4 id="process_step2"></h4>
+        <p id="process_step2_desc" class="placeholder-text"></p>
+      </div>
+      <div class="process-card">
+        <h4 id="process_step3"></h4>
+        <p id="process_step3_desc" class="placeholder-text"></p>
+      </div>
+      <div class="process-card">
+        <h4 id="process_step4"></h4>
+        <p id="process_step4_desc" class="placeholder-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">💻</span>
+      <span id="skills_title"></span>
+    </h2>
+    <div class="skills-grid">
+      <div>
+        <h3 id="design_skills" class="skill-category-red"></h3>
+        <p id="design_list" class="placeholder-text"></p>
+      </div>
+      <div>
+        <h3 id="technical_skills" class="skill-category-blue"></h3>
+        <p id="technical_list" class="placeholder-text"></p>
+      </div>
+      <div>
+        <h3 id="artistic_skills" class="skill-category-orange"></h3>
+        <p id="artistic_list" class="placeholder-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">📚</span>
+      <span id="inspiration_title"></span>
+    </h2>
+    <p id="inspiration_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">📖</span>
+      <span id="learning_title"></span>
+    </h2>
+    <p id="learning_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">📄</span>
+      <span id="resume_title"></span>
+    </h2>
+    
+    <button class="btn-download">
+      📄 <span id="resume_download"></span>
+    </button>
+
+    <div class="resume-section">
+      <h3 id="resume_education"></h3>
+      <p id="resume_education_content" class="resume-content placeholder-text"></p>
+    </div>
+
+    <div class="resume-section">
+      <h3 id="resume_experience"></h3>
+      <p id="resume_experience_content" class="resume-content placeholder-text"></p>
+    </div>
+
+    <div class="resume-section">
+      <h3 id="resume_achievements"></h3>
+      <p id="resume_achievements_content" class="resume-content placeholder-text"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎯</span>
+      <span id="future_title"></span>
+    </h2>
+    <p id="future_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section gradient-purple">
+    <h2 class="section-title center">
+      <span id="contact_title"></span>
+    </h2>
+    <p class="contact-info">
+      <strong><span id="email_label"></span></strong> ccyarthur@email.com
+    </p>
+    <p class="contact-info">
+      <strong><span id="github_label"></span></strong>
+      <a href="https://github.com/ArthurC13" class="contact-link">ArthurC13</a>
+    </p>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
