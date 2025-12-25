@@ -63,7 +63,7 @@ function updateContent() {
   }
 }
 
-// Update shared elements (header name, footer)
+// Update shared elements (header name, footer, navigation)
 function updateSharedContent() {
   const shared = translations.shared;
 
@@ -80,6 +80,34 @@ function updateSharedContent() {
 
   const githubLabel = document.getElementById('github_label');
   if (githubLabel) githubLabel.textContent = shared.github_label;
+
+  // Update navigation if it exists
+  const navAbout = document.getElementById('nav_about');
+  if (navAbout) navAbout.textContent = shared.nav_about;
+
+  const navPhilosophy = document.getElementById('nav_philosophy');
+  if (navPhilosophy) navPhilosophy.textContent = shared.nav_philosophy;
+
+  const navLanguages = document.getElementById('nav_languages');
+  if (navLanguages) navLanguages.textContent = shared.nav_languages;
+
+  const navProjects = document.getElementById('nav_projects');
+  if (navProjects) navProjects.textContent = shared.nav_projects;
+
+  const navUiStudy = document.getElementById('nav_ui_study');
+  if (navUiStudy) navUiStudy.textContent = shared.nav_ui_study;
+
+  const navProcess = document.getElementById('nav_process');
+  if (navProcess) navProcess.textContent = shared.nav_process;
+
+  const navSkills = document.getElementById('nav_skills');
+  if (navSkills) navSkills.textContent = shared.nav_skills;
+
+  const navResume = document.getElementById('nav_resume');
+  if (navResume) navResume.textContent = shared.nav_resume;
+
+  const navContact = document.getElementById('nav_contact');
+  if (navContact) navContact.textContent = shared.nav_contact;
 }
 
 // Update home page content (minimal)
@@ -110,8 +138,11 @@ function updateHongKongContent() {
   document.getElementById('languages_subtitle').textContent = hk.languages_subtitle;
   document.getElementById('languages_intro').textContent = hk.languages_intro;
   document.getElementById('language_native').textContent = hk.language_native;
+  document.getElementById('language_native_content').textContent = hk.language_native_content;
   document.getElementById('language_fluent').textContent = hk.language_fluent;
+  document.getElementById('language_fluent_content').textContent = hk.language_fluent_content;
   document.getElementById('language_learning').textContent = hk.language_learning;
+  document.getElementById('language_learning_content').textContent = hk.language_learning_content;
   document.getElementById('languages_value').textContent = hk.languages_value;
 
   // Creative projects section
@@ -199,8 +230,11 @@ function updateJapanContent() {
   document.getElementById('languages_subtitle').textContent = jp.languages_subtitle;
   document.getElementById('languages_intro').textContent = jp.languages_intro;
   document.getElementById('language_native').textContent = jp.language_native;
+  document.getElementById('language_native_content').textContent = jp.language_native_content;
   document.getElementById('language_fluent').textContent = jp.language_fluent;
+  document.getElementById('language_fluent_content').textContent = jp.language_fluent_content;
   document.getElementById('language_learning').textContent = jp.language_learning;
+  document.getElementById('language_learning_content').textContent = jp.language_learning_content;
   document.getElementById('languages_value').textContent = jp.languages_value;
 
   // Creative projects section
