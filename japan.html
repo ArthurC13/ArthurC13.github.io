@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header id="top">
     <h1 id="name"></h1>
     <p id="tagline"></p>
     <div class="lang-switch">
@@ -15,9 +15,21 @@
       <button onclick="setLanguage('ja')" id="btn-ja" class="active">日本語</button>
       <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
     </div>
+
+    <nav class="page-index">
+      <a href="#about">About</a>
+      <a href="#philosophy">Philosophy</a>
+      <a href="#languages">Languages</a>
+      <a href="#projects">Projects</a>
+      <a href="#ui-study">UI/UX</a>
+      <a href="#process">Process</a>
+      <a href="#skills">Skills</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section class="section">
+  <section class="section" id="about">
     <h2 class="section-title">
       <span class="icon">❤️</span>
       <span id="about_title"></span>
@@ -25,7 +37,7 @@
     <p id="about_text" class="placeholder-text"></p>
   </section>
 
-  <section class="section gradient-peach">
+  <section class="section gradient-peach" id="philosophy">
     <h2 class="section-title">
       <span class="icon">✨</span>
       <span id="philosophy_title"></span>
@@ -33,7 +45,7 @@
     <p id="philosophy_text" class="placeholder-text"></p>
   </section>
 
-  <section class="section gradient-blue">
+  <section class="section gradient-blue" id="languages">
     <h2 class="section-title">
       <span class="icon">🌍</span>
       <span id="languages_title"></span>
@@ -48,7 +60,7 @@
     <p id="languages_value" class="placeholder-text"></p>
   </section>
 
-  <section class="section">
+  <section class="section" id="projects">
     <h2 class="section-title">
       <span class="icon">🎮</span>
       <span id="creative_title"></span>
@@ -72,7 +84,7 @@
     <p id="art_note" class="info-box-yellow placeholder-text"></p>
   </section>
 
-  <section class="section">
+  <section class="section" id="ui-study">
     <h2 class="section-title">
       <span class="icon">📱</span>
       <span id="ui_study_title"></span>
@@ -93,7 +105,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="process">
     <h2 class="section-title">
       <span class="icon">🎨</span>
       <span id="process_title"></span>
@@ -118,7 +130,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <section class="section" id="skills">
     <h2 class="section-title">
       <span class="icon">💻</span>
       <span id="skills_title"></span>
@@ -155,7 +167,7 @@
     <p id="learning_text" class="placeholder-text"></p>
   </section>
 
-  <section class="section">
+  <section class="section" id="resume">
     <h2 class="section-title">
       <span class="icon">📄</span>
       <span id="resume_title"></span>
@@ -189,7 +201,7 @@
     <p id="future_text" class="placeholder-text"></p>
   </section>
 
-  <section class="section gradient-purple">
+  <section class="section gradient-purple" id="contact">
     <h2 class="section-title center">
       <span id="contact_title"></span>
     </h2>
@@ -201,6 +213,10 @@
       <a href="https://github.com/ArthurC13" class="contact-link">ArthurC13</a>
     </p>
   </section>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">
+    ↑
+  </a>
 
   <script src="script.js"></script>
 </body>

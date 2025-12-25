@@ -268,6 +268,21 @@ function updateJapanContent() {
   document.getElementById('future_text').textContent = jp.future_text;
 }
 
+// Back to top button functionality
+function initBackToTop() {
+  const backToTopButton = document.getElementById('backToTop');
+
+  if (!backToTopButton) return; // Only run on pages with back-to-top button
+
+  window.addEventListener('scroll', () => {
+    if (window.pageYOffset > 300) {
+      backToTopButton.classList.add('visible');
+    } else {
+      backToTopButton.classList.remove('visible');
+    }
+  });
+}
+
 // Initialize on page load
 document.addEventListener('DOMContentLoaded', () => {
   const currentPage = getCurrentPage();
@@ -279,4 +294,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   setLanguage(savedLang || 'en');
+
+  // Initialize back to top button
+  initBackToTop();
 });

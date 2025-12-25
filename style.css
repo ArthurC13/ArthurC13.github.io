@@ -335,6 +335,71 @@ header p {
   margin-bottom: 20px;
 }
 
+/* Page Index Navigation */
+.page-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.page-index a {
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  background: rgba(255, 255, 255, 0.1);
+  font-size: 0.95em;
+  font-weight: 500;
+}
+
+.page-index a:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+}
+
+/* Back to Top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-decoration: none;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.back-to-top:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.4);
+}
+
+/* Smooth scroll */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   header h1 {
@@ -355,5 +420,24 @@ header p {
 
   .process-grid {
     grid-template-columns: 1fr;
+  }
+
+  .page-index {
+    gap: 10px;
+    padding-top: 15px;
+    margin-top: 20px;
+  }
+
+  .page-index a {
+    padding: 6px 12px;
+    font-size: 0.85em;
+  }
+
+  .back-to-top {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+    font-size: 20px;
   }
 }
