@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Chen | CityU Application</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="lang-switch-top">
+    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+    <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+    <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+  </div>
+
+  <header id="top">
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="apply_cityu_subtitle"></p>
+
+    <nav class="page-index">
+      <a href="../../">Home</a>
+      <a href="../../projects" data-i18n="nav_projects"></a>
+      <a href="../../design-thinking">Design Thinking</a>
+      <a href="../../about" data-i18n="nav_about"></a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎓</span>
+      CityU - City University of Hong Kong
+    </h2>
+    <p class="placeholder-text">This page highlights how my creative practice aligns with the interdisciplinary focus of the BA Creative Media programme at CityU.
+
+My work explores games as a form of playable media — combining programming, interaction, sound, and real-time feedback to create experiences that invite exploration and discovery. Rather than focusing on polished aesthetics, I use rapid prototyping to test ideas and push the boundaries of how players interact with systems.
+
+In my machine learning connect 4, I experimented with unconventional control constraints and adaptive difficulty to observe how players respond to changing rulesets. This project reflects my interest in games as expressive media, where mechanics themselves communicate meaning.</p>
+    <a href="../" class="btn">Back to Applications</a>
+  </section>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">
+    ↑
+  </a>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

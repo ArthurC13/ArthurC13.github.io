@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Chen | Procedural Generation Maze</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="lang-switch-top">
+    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+    <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+    <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+  </div>
+
+  <header id="top">
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="maze_title"></p>
+
+    <nav class="page-index">
+      <a href="../../">Home</a>
+      <a href="../" data-i18n="nav_projects"></a>
+      <a href="../../design-thinking">Design Thinking</a>
+      <a href="../../about" data-i18n="nav_about"></a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <div class="project-media">
+      <iframe
+        src="https://www.youtube.com/embed/VIDEO_ID_3"
+        title="Procedural Generation Maze Gameplay"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+    <h2 class="section-title">
+      <span class="icon">🎮</span>
+      <span data-i18n="maze_title"></span>
+    </h2>
+    <p data-i18n="maze_desc" class="placeholder-text"></p>
+    <p><strong data-i18n="maze_role"></strong></p>
+    <p class="highlight">
+      <strong>✨</strong> <span data-i18n="maze_highlight" class="placeholder-text"></span>
+    </p>
+
+    <div class="project-screenshots">
+      <h5 data-i18n="screenshots_heading"></h5>
+      <div class="screenshots-gallery">
+        <img src="../../images/projects/project3-screenshot-1.png" alt="Procedural Generation Maze screenshot 1">
+        <img src="../../images/projects/project3-screenshot-2.png" alt="Procedural Generation Maze screenshot 2">
+        <img src="../../images/projects/project3-screenshot-3.png" alt="Procedural Generation Maze screenshot 3">
+      </div>
+    </div>
+
+    <a href="https://github.com/ArthurC13/procedural-maze" target="_blank" class="btn">
+      <span data-i18n="view_github"></span>
+    </a>
+
+    <a href="../" class="btn">
+      <span data-i18n="back_to_projects"></span>
+    </a>
+  </section>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">
+    ↑
+  </a>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

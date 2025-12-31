@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Chen | PolyU Application</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="lang-switch-top">
+    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+    <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+    <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+  </div>
+
+  <header id="top">
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="apply_polyu_subtitle"></p>
+
+    <nav class="page-index">
+      <a href="../../">Home</a>
+      <a href="../../projects" data-i18n="nav_projects"></a>
+      <a href="../../design-thinking">Design Thinking</a>
+      <a href="../../about" data-i18n="nav_about"></a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎓</span>
+      PolyU - BA (Hons) Scheme in Design
+    </h2>
+    <p class="placeholder-text">This page highlights how my background and portfolio align with the BA (Hons) Scheme in Design at PolyU.
+
+Coming from a computer science background, I became increasingly interested not only in how systems function technically, but in how they are experienced by users. Through game development, I found a medium that naturally integrates interaction design, feedback systems, and iterative problem-solving.
+
+In my platformer project, I focused on refining player feedback through timing, UI clarity, and state changes rather than visual fidelity. This process involved repeated prototyping and playtesting to improve usability and engagement — an approach that reflects my interest in design as an iterative and human-centered practice..</p>
+    <a href="../" class="btn">Back to Applications</a>
+  </section>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">
+    ↑
+  </a>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Chen | About</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="lang-switch-top">
+    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+    <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+    <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+  </div>
+
+  <header id="top">
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="tagline"></p>
+
+    <nav class="page-index">
+      <a href="../">Home</a>
+      <a href="../projects" data-i18n="nav_projects"></a>
+      <a href="../design-thinking">Design Thinking</a>
+      <a href="./" class="active" data-i18n="nav_about"></a>
+    </nav>
+  </header>
+
+  <section class="section" id="about">
+    <h2 class="section-title">
+      <span class="icon">❤️</span>
+      <span data-i18n="about_title"></span>
+    </h2>
+    <p data-i18n="about_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section gradient-peach" id="philosophy">
+    <h2 class="section-title">
+      <span class="icon">✨</span>
+      <span data-i18n="philosophy_title"></span>
+    </h2>
+    <p data-i18n="philosophy_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section gradient-blue" id="languages">
+    <h2 class="section-title">
+      <span class="icon">🌍</span>
+      <span data-i18n="languages_title"></span>
+    </h2>
+    <p data-i18n="languages_subtitle" class="subtitle"></p>
+    <p data-i18n="languages_intro" class="placeholder-text"></p>
+    <div class="info-box">
+      <p><strong data-i18n="language_native"></strong> <span data-i18n="language_native_content"></span></p>
+      <p><strong data-i18n="language_fluent"></strong> <span data-i18n="language_fluent_content"></span></p>
+      <p><strong data-i18n="language_learning"></strong> <span data-i18n="language_learning_content"></span></p>
+    </div>
+    <p data-i18n="languages_value" class="placeholder-text"></p>
+  </section>
+
+  <section class="section" id="skills">
+    <h2 class="section-title">
+      <span class="icon">💻</span>
+      <span data-i18n="skills_title"></span>
+    </h2>
+    <div class="skills-grid">
+      <div>
+        <h3 data-i18n="design_skills" class="skill-category-red"></h3>
+        <p data-i18n="design_list" class="placeholder-text"></p>
+      </div>
+      <div>
+        <h3 data-i18n="technical_skills" class="skill-category-blue"></h3>
+        <p data-i18n="technical_list" class="placeholder-text"></p>
+      </div>
+      <div>
+        <h3 data-i18n="artistic_skills" class="skill-category-orange"></h3>
+        <p data-i18n="artistic_list" class="placeholder-text"></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">📚</span>
+      <span data-i18n="inspiration_title"></span>
+    </h2>
+    <p data-i18n="inspiration_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">📖</span>
+      <span data-i18n="learning_title"></span>
+    </h2>
+    <p data-i18n="learning_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section" id="resume">
+    <h2 class="section-title">
+      <span class="icon">📄</span>
+      <span data-i18n="resume_title"></span>
+    </h2>
+
+    <button class="btn-download">
+      📄 <span data-i18n="resume_download"></span>
+    </button>
+
+    <div class="resume-section">
+      <h3 data-i18n="resume_education"></h3>
+      <p data-i18n="resume_education_content" class="resume-content placeholder-text"></p>
+    </div>
+
+    <div class="resume-section">
+      <h3 data-i18n="resume_experience"></h3>
+      <p data-i18n="resume_experience_content" class="resume-content placeholder-text"></p>
+    </div>
+
+    <div class="resume-section">
+      <h3 data-i18n="resume_achievements"></h3>
+      <p data-i18n="resume_achievements_content" class="resume-content placeholder-text"></p>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎯</span>
+      <span data-i18n="future_title"></span>
+    </h2>
+    <p data-i18n="future_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section gradient-purple" id="contact">
+    <h2 class="section-title center">
+      <span data-i18n="contact_title"></span>
+    </h2>
+    <p class="contact-info">
+      <strong><span data-i18n="email_label"></span></strong> ccyarthur@email.com
+    </p>
+    <p class="contact-info">
+      <strong><span data-i18n="github_label"></span></strong>
+      <a href="https://github.com/ArthurC13" class="contact-link">ArthurC13</a>
+    </p>
+  </section>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">
+    ↑
+  </a>
+
+  <script src="../script.js"></script>
+</body>
+</html>

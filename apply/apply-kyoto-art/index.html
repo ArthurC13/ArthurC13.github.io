@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Chen | Kyoto Art Application</title>
+  <link rel="stylesheet" href="../../style.css">
+</head>
+<body>
+  <div class="lang-switch-top">
+    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+    <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+    <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+  </div>
+
+  <header id="top">
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="apply_kyoto_art_subtitle"></p>
+
+    <nav class="page-index">
+      <a href="../../">Home</a>
+      <a href="../../projects" data-i18n="nav_projects"></a>
+      <a href="../../design-thinking">Design Thinking</a>
+      <a href="../../about" data-i18n="nav_about"></a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎓</span>
+      Kyoto University of the Arts
+    </h2>
+    <p class="placeholder-text">本ページでは、京都芸術大学ゲームクリエイションコースとの適合性を示すため、私の制作経験を紹介します。
+
+私はプログラミングを基盤としながらも、ゲーム制作において最も重要なのは「意図を持って作り、最後まで完成させること」だと考えています。個人制作を通して、企画・実装・調整・改善を繰り返す制作プロセスを重視してきました。
+
+2Dプラットフォーマーアドベンチャーでは、コアとなるゲームループを明確に定義し、プレイヤーの行動と結果の関係が直感的に伝わるよう、細かな調整を重ねました。この反復的な制作姿勢は、本コースの教育方針と強く共鳴していると感じています。 </p>
+    <a href="../" class="btn">Back to Applications</a>
+  </section>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">
+    ↑
+  </a>
+
+  <script src="../../script.js"></script>
+</body>
+</html>

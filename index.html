@@ -7,31 +7,51 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <div class="lang-switch-top">
+    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+    <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+    <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+  </div>
+
   <header>
-    <h1 id="name"></h1>
-    <p id="tagline"></p>
-    <div class="lang-switch">
-      <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
-      <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
-      <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
-    </div>
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="tagline"></p>
+
+    <nav class="page-index">
+      <a href="./" data-i18n="nav_home" class="active"></a>
+      <a href="./projects" data-i18n="nav_projects"></a>
+      <a href="./design-thinking">Design Thinking</a>
+      <a href="./about" data-i18n="nav_about"></a>
+    </nav>
   </header>
 
   <section class="section home-intro">
-    <p id="home_intro"></p>
+    <p data-i18n="intro"></p>
   </section>
 
-  <section class="section gradient-purple">
-    <h2 class="section-title center">
-      <span id="contact_title"></span>
+  <section class="section gradient-peach">
+    <h2 class="section-title">
+      <span class="icon">✨</span>
+      <span data-i18n="philosophy_title"></span>
     </h2>
-    <p class="contact-info">
-      <strong><span id="email_label"></span></strong> ccyarthur@email.com
-    </p>
-    <p class="contact-info">
-      <strong><span id="github_label"></span></strong>
-      <a href="https://github.com/ArthurC13" class="contact-link">ArthurC13</a>
-    </p>
+    <p data-i18n="philosophy_text" class="placeholder-text"></p>
+  </section>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎮</span>
+      <span data-i18n="creative_title"></span>
+    </h2>
+
+    <div class="project-card">
+      <h4 data-i18n="project1_title"></h4>
+      <p data-i18n="project1_desc" class="placeholder-text"></p>
+      <p class="highlight">
+        <strong>✨</strong> <span data-i18n="project1_highlight" class="placeholder-text"></span>
+      </p>
+      <a href="./projects" class="btn">View All Projects</a>
+    </div>
+
   </section>
 
   <script src="script.js"></script>

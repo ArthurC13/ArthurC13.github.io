@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arthur Chen | University Applications</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+  <div class="lang-switch-top">
+    <button onclick="setLanguage('en')" id="btn-en" class="active">EN</button>
+    <button onclick="setLanguage('ja')" id="btn-ja">日本語</button>
+    <button onclick="setLanguage('zh')" id="btn-zh">中文</button>
+  </div>
+
+  <header id="top">
+    <h1 data-i18n="name"></h1>
+    <p data-i18n="apply_subtitle"></p>
+
+    <nav class="page-index">
+      <a href="../">Home</a>
+      <a href="../projects" data-i18n="nav_projects"></a>
+      <a href="../design-thinking">Design Thinking</a>
+      <a href="../about" data-i18n="nav_about"></a>
+    </nav>
+  </header>
+
+  <section class="section">
+    <h2 class="section-title">
+      <span class="icon">🎓</span>
+      <span data-i18n="apply_hk_title"></span>
+    </h2>
+    <div class="project-card">
+      <h4>PolyU - Hong Kong Polytechnic University</h4>
+      <a href="./apply-polyu" class="btn">View Application Portfolio</a>
+    </div>
+    <div class="project-card">
+      <h4>CityU - City University of Hong Kong</h4>
+      <a href="./apply-cityu" class="btn">View Application Portfolio</a>
+    </div>
+  </section>
+
+  <section class="section gradient-peach">
+    <h2 class="section-title">
+      <span class="icon">🎓</span>
+      <span data-i18n="apply_jp_title"></span>
+    </h2>
+    <div class="project-card">
+      <h4>Kyoto University of the Arts</h4>
+      <a href="./apply-kyoto-art" class="btn">View Application Portfolio</a>
+    </div>
+    <div class="project-card">
+      <h4>Kyoto Seika University</h4>
+      <a href="./apply-kyoto-seika" class="btn">View Application Portfolio</a>
+    </div>
+  </section>
+
+  <a href="#top" class="back-to-top" id="backToTop" title="Back to top">
+    ↑
+  </a>
+
+  <script src="../script.js"></script>
+</body>
+</html>
