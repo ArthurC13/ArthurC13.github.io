@@ -40,12 +40,39 @@
       <span class="icon">🎮</span>
       <span data-i18n="maze_title"></span>
     </h2>
-    <p data-i18n="maze_desc" class="placeholder-text"></p>
-    <p><strong data-i18n="maze_role"></strong></p>
-    <p class="highlight">
-      <strong>✨</strong> <span data-i18n="maze_highlight" class="placeholder-text"></span>
+
+    <!-- One-Sentence Purpose -->
+    <p class="project-overview">
+      This project studies how procedural structure influences player navigation, confusion, and discovery.
     </p>
 
+    <!-- Project Components -->
+    <h3 class="subsection-title">Project Components</h3>
+
+    <h4>Randomly Generated Maze</h4>
+    <p>
+      A procedural maze generation system that creates unique layouts every time using algorithms like recursive backtracking and depth-first search. Each maze is guaranteed to be solvable, with a clear path from start to finish, but the complexity and layout vary with each generation. This randomness creates an ever-changing environment where players must navigate unfamiliar spaces.
+    </p>
+
+    <!-- Player Experience Focus -->
+    <h3 class="subsection-title">Player Experience Focus</h3>
+    <p>
+      <strong>When did players feel lost?</strong> Players became disoriented in long, featureless corridors with too many similar-looking junctions. Without visual landmarks or memorable spatial features, they lost track of where they'd been and struggled to build a mental map of the space.
+    </p>
+    <p>
+      <strong>When did exploration feel rewarding?</strong> Discovery felt most satisfying when players found shortcuts, dead-ends with collectibles, or when they recognized a previously visited area from a new angle. These moments of spatial understanding created a sense of mastery over the maze's complexity.
+    </p>
+    <p>
+      <strong>What made layouts readable vs frustrating?</strong> Readable mazes had distinct sections with varied corridor lengths and recognizable junction patterns. Frustrating mazes felt homogeneous—every turn looked identical, making navigation feel random rather than skill-based. The key difference was environmental variety that supported spatial memory.
+    </p>
+
+    <!-- Design Takeaway -->
+    <h3 class="subsection-title">Design Takeaway</h3>
+    <p>
+      This informed my level design approach in the platformer, especially in how I guide players subtly without explicit tutorials. I learned that spatial clarity comes from environmental variety and memorable landmarks, not from making paths obvious. In my platformer levels, I apply this by creating visually distinct areas, using environmental cues to hint at hidden paths, and ensuring players can build a mental map through visual consistency. The goal is to let players feel clever for finding the way forward, rather than feeling lost or hand-held.
+    </p>
+
+    <!-- Screenshots -->
     <div class="project-screenshots">
       <h5 data-i18n="screenshots_heading"></h5>
       <div class="screenshots-gallery">
@@ -55,6 +82,7 @@
       </div>
     </div>
 
+    <!-- Action buttons -->
     <a href="https://github.com/ArthurC13/procedural-maze" target="_blank" class="btn">
       <span data-i18n="view_github"></span>
     </a>

@@ -146,6 +146,14 @@ header p {
   margin-top: 30px;
 }
 
+h4 {
+  font-size: 1.2em;
+  color: #333;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
 .placeholder-text {
   font-size: 1.1em;
   line-height: 1.8;
@@ -606,4 +614,17 @@ html {
     height: 45px;
     font-size: 20px;
   }
+}
+
+/* Reflection sections */
+.reflection-section {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.reflection-section h3 {
+  font-size: 1.5em;
+  color: #2c3e50;
+  margin-bottom: 15px;
+  font-weight: 600;
 }

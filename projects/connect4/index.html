@@ -40,12 +40,49 @@
       <span class="icon">🎮</span>
       <span data-i18n="connect4_title"></span>
     </h2>
-    <p data-i18n="connect4_desc" class="placeholder-text"></p>
-    <p><strong data-i18n="connect4_role"></strong></p>
-    <p class="highlight">
-      <strong>✨</strong> <span data-i18n="connect4_highlight" class="placeholder-text"></span>
+
+    <!-- One-Sentence Purpose -->
+    <p class="project-overview">
+      This project explores how different decision-making systems influence gameplay behavior and perceived fairness.
     </p>
 
+    <!-- Project Components -->
+    <h3 class="subsection-title">Project Components</h3>
+
+    <h4>Connect 4</h4>
+    <p>
+      A classic two-player connection game where players take turns dropping colored discs into a vertical grid. The goal is to be the first to form a horizontal, vertical, or diagonal line of four discs. This serves as the foundation for comparing different AI decision-making approaches.
+    </p>
+
+    <h4>Minimax AI</h4>
+    <p>
+      A traditional game theory algorithm that evaluates all possible moves to select the mathematically optimal play. It uses alpha-beta pruning for efficiency and can look several moves ahead to ensure the best possible outcome. This creates a deterministic, predictable opponent.
+    </p>
+
+    <h4>NEAT AI (NeuroEvolution of Augmenting Topologies)</h4>
+    <p>
+      An evolutionary algorithm that develops neural networks through genetic selection and mutation. Rather than being programmed with optimal strategies, it learns through trial and error, evolving behaviors that may be sub-optimal but more varied and unpredictable.
+    </p>
+
+    <!-- Design Insight -->
+    <h3 class="subsection-title">Design Insight</h3>
+    <p>
+      Playing against Minimax felt like facing a calculating machine—it never made mistakes, always chose the optimal move, and created a predictable pattern of play. While challenging, this predictability became somewhat mechanical. Players could anticipate its strategy, and matches followed similar patterns.
+    </p>
+    <p>
+      NEAT, by contrast, behaved more organically. It made surprising moves that weren't always optimal, sometimes setting up elaborate traps or playing defensively when aggression would have been better. These "imperfections" made it feel more human-like and engaging. The unpredictability kept players alert and made each match feel unique.
+    </p>
+    <p>
+      This comparison revealed an important design principle: perfect play isn't always the most engaging play. NEAT's occasional sub-optimal decisions created moments of surprise, relief, and opportunity that made the experience more dynamic. The imperfection wasn't a flaw—it was a feature that increased player engagement and emotional investment.
+    </p>
+
+    <!-- Design Takeaway -->
+    <h3 class="subsection-title">Design Takeaway</h3>
+    <p>
+      This experiment fundamentally influenced how I approach enemy behavior in my platformer project. Rather than programming enemies to always make optimal decisions, I prioritize behaviors that are readable and predictable enough to feel fair, but imperfect enough to create interesting gameplay moments. An enemy that occasionally "misses" or hesitates feels more alive and creates opportunities for player mastery. The goal isn't to create the hardest possible challenge, but to design opponents that feel satisfying to overcome—where victory feels earned but achievable.
+    </p>
+
+    <!-- Screenshots -->
     <div class="project-screenshots">
       <h5 data-i18n="screenshots_heading"></h5>
       <div class="screenshots-gallery">
@@ -55,6 +92,7 @@
       </div>
     </div>
 
+    <!-- Action buttons -->
     <a href="https://github.com/ArthurC13/ml-connect4" target="_blank" class="btn">
       <span data-i18n="view_github"></span>
     </a>

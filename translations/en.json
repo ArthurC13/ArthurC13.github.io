@@ -83,7 +83,7 @@
   "platformer_role": "Role: Lead Programmer & Level Designer",
   "platformer_highlight": "Design Highlight: Created an engaging player experience through polished animations, responsive physics, and intuitive level progression that balances accessibility with rewarding challenges and exploration.",
   "connect4_title": "Machine Learning Connect 4",
-  "connect4_preview": "An AI-powered Connect 4 game using machine learning algorithms to create an intelligent opponent.",
+  "connect4_preview": "Exploring how rules and information shape player decision-making.",
   "connect4_desc": "An AI-powered Connect 4 game that uses machine learning algorithms to create an intelligent opponent. The project explores different AI approaches including minimax algorithm with alpha-beta pruning and reinforcement learning techniques to create a challenging and adaptive gameplay experience.",
   "connect4_role": "Role: AI Developer & Game Programmer",
   "connect4_highlight": "Technical Highlight: Implemented multiple AI strategies with varying difficulty levels, allowing players to experience different challenges while demonstrating practical applications of game theory and machine learning in interactive entertainment.",
