@@ -18,9 +18,9 @@
     <p data-i18n="tagline"></p>
 
     <nav class="page-index">
-      <a href="../">Home</a>
+      <a href="../" data-i18n="nav_home"></a>
       <a href="../projects" data-i18n="nav_projects"></a>
-      <a href="./" class="active">Design Thinking</a>
+      <a href="./" class="active" data-i18n="nav_design_thinking"></a>
       <a href="../about" data-i18n="nav_about"></a>
     </nav>
   </header>
@@ -28,47 +28,45 @@
   <section class="section" id="reflections">
     <h2 class="section-title">
       <span class="icon">🎨</span>
-      <span>Design Reflections</span>
+      <span data-i18n="design_reflections_title"></span>
     </h2>
 
-    <p class="placeholder-text">
-      This page collects short reflections on how I approach game design as a solo developer. Rather than focusing on visual polish, I prioritize clarity of mechanics, player feedback, and iterative improvement through playtesting.
-    </p>
+    <p class="placeholder-text" data-i18n="design_reflections_intro"></p>
 
     <div class="reflection-section">
-      <h3>Context-Based Combat</h3>
+      <h3 data-i18n="design_combat_title"></h3>
 
-      <p class="placeholder-text"><strong>Context:</strong> Traditional action games use multiple buttons for different attacks, increasing complexity and cognitive load for players.</p>
+      <p class="placeholder-text" data-i18n="design_combat_context"></p>
 
-      <p class="placeholder-text"><strong>Decision:</strong> I implemented a single attack input that varies based on player state (airborne, standing, moving), creating different attacks from one button.</p>
+      <p class="placeholder-text" data-i18n="design_combat_decision"></p>
 
-      <p class="placeholder-text"><strong>Result:</strong> Players could focus on positioning and timing rather than memorizing button combinations, while still experiencing combat depth through emergent move combinations.</p>
+      <p class="placeholder-text" data-i18n="design_combat_result"></p>
 
-      <p class="placeholder-text"><strong>Insight:</strong> Simplicity in input controls can create depth through contextual variation. Less is often more when it comes to control schemes.</p>
+      <p class="placeholder-text" data-i18n="design_combat_insight"></p>
     </div>
 
     <div class="reflection-section">
-      <h3>Physics Tuning by Feel</h3>
+      <h3 data-i18n="design_physics_title"></h3>
 
-      <p class="placeholder-text"><strong>Context:</strong> Jump mechanics needed to feel satisfying and responsive, not just function correctly from a physics standpoint.</p>
+      <p class="placeholder-text" data-i18n="design_physics_context"></p>
 
-      <p class="placeholder-text"><strong>Decision:</strong> Rather than using mathematically "correct" physics values, I spent extensive time playtesting and tweaking gravity, jump height, and air control based purely on how it felt.</p>
+      <p class="placeholder-text" data-i18n="design_physics_decision"></p>
 
-      <p class="placeholder-text"><strong>Result:</strong> Movement feels tight and enjoyable. Players have precise control, and jumps feel predictable yet dynamic. Hundreds of small adjustments transformed functional movement into fun movement.</p>
+      <p class="placeholder-text" data-i18n="design_physics_result"></p>
 
-      <p class="placeholder-text"><strong>Insight:</strong> The difference between functional and enjoyable often lies in fine-tuning through iteration. Feel trumps mathematical accuracy in game design.</p>
+      <p class="placeholder-text" data-i18n="design_physics_insight"></p>
     </div>
 
     <div class="reflection-section">
-      <h3>Camera System Evolution</h3>
+      <h3 data-i18n="design_camera_title"></h3>
 
-      <p class="placeholder-text"><strong>Context:</strong> My initial simple follow camera felt jarring during jumps and rapid player movement, creating a disorienting experience.</p>
+      <p class="placeholder-text" data-i18n="design_camera_context"></p>
 
-      <p class="placeholder-text"><strong>Decision:</strong> I refined the camera to anticipate player direction and smooth out rapid movements, looking slightly ahead in the direction of jumps and movement.</p>
+      <p class="placeholder-text" data-i18n="design_camera_decision"></p>
 
-      <p class="placeholder-text"><strong>Result:</strong> The viewing experience became more cinematic and comfortable. Players could see ahead to where they're going, reducing frustration and improving platforming precision.</p>
+      <p class="placeholder-text" data-i18n="design_camera_result"></p>
 
-      <p class="placeholder-text"><strong>Insight:</strong> Good camera work is invisible—players notice when it's bad, not when it's good. The best camera systems serve the player without drawing attention to themselves.</p>
+      <p class="placeholder-text" data-i18n="design_camera_insight"></p>
     </div>
   </section>
 
