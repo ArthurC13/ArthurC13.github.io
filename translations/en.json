@@ -1,6 +1,6 @@
 {
   "name": "Arthur Chen",
-  "tagline": "Aspiring Game Designer | UI/UX Designer | Creative Developer",
+  "tagline": "Student Game Designer & Creative Developer",
   "contact_title": "Contact",
   "email_label": "Email:",
   "github_label": "GitHub:",
@@ -8,9 +8,9 @@
   "nav_about": "About",
   "nav_projects": "Projects",
   "nav_design_thinking": "Design Thinking",
-  "intro": "Aspiring indie game developer focused on mechanically deep, emotionally resonant gameplay.",
+  "intro": "Student game designer focused on mechanically deep gameplay and emotionally resonant player experiences.",
   "philosophy_title": "Design Philosophy",
-  "philosophy_text": "I am an aspiring indie game developer with a strong foundation in technical problem-solving and interactive design. With a background in computer science and game development, I focus on designing mechanically deep gameplay systems where player mastery and emotional progression are closely connected. My international experience studying in the UK and Japan has shaped how I think about player experience and accessibility across cultures. I am now seeking formal training in game and creative design to strengthen my design thinking and move toward creating polished independent games.",
+  "philosophy_text": "I approach game design as a balance between systems and player experience. With a background in computer science and game development, I focus on designing mechanically deep gameplay systems where player mastery and emotional progression are closely connected. My international experience studying in the UK and Japan has shaped how I think about accessibility and cross-cultural player experience. I am now seeking formal training in game and creative design to strengthen my design thinking and develop more polished independent games.",
   "creative_title": "Creative Projects",
   "game_projects_subtitle": "Game Design & Development",
   "platformer_title": "2D Platformer Adventure",
@@ -89,5 +89,7 @@
   "apply_polyu_subtitle": "Application Portfolio for Hong Kong Polytechnic University",
   "apply_cityu_subtitle": "Application Portfolio for City University of Hong Kong",
   "apply_kyoto_art_subtitle": "Application Portfolio for Kyoto University of the Arts",
-  "apply_kyoto_seika_subtitle": "Application Portfolio for Kyoto Seika University"
+  "apply_kyoto_seika_subtitle": "Application Portfolio for Kyoto Seika University",
+  "project_english_note": "This project case study is presented in English to preserve design and technical nuance.",
+  "return_to_application": "← Back to Application Page"
 }

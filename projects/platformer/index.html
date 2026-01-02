@@ -18,9 +18,9 @@
     <p data-i18n="platformer_title"></p>
 
     <nav class="page-index">
-      <a href="../../">Home</a>
+      <a href="../../" data-i18n="nav_home"></a>
       <a href="../" data-i18n="nav_projects"></a>
-      <a href="../../design-thinking">Design Thinking</a>
+      <a href="../../design-thinking" data-i18n="nav_design_thinking"></a>
       <a href="../../about" data-i18n="nav_about"></a>
     </nav>
   </header>
@@ -41,57 +41,59 @@
       <span data-i18n="platformer_title"></span>
     </h2>
 
+    <!-- Language Notice -->
+    <p class="project-note" data-i18n="project_english_note" style="font-style: italic; color: #666; margin-bottom: 1em;">
+      This project case study is presented in English to preserve design and technical nuance.
+    </p>
+
     <!-- Short Overview -->
     <p class="project-overview">
-      A comprehensive 2D platformer game developed as my Computer Science A-Level project and continuously refined through iterative development. This project explores the fundamentals of platformer design, focusing on responsive player controls, dynamic camera systems, and progressive level design that gradually introduces mechanics while rewarding exploration and player mastery.
+      A fully playable 2D platformer developed initially as my Computer Science A-Level project and refined through continued iteration. This project explores core principles of platformer design, with a focus on responsive player movement, camera behavior, and level structures that introduce mechanics gradually while rewarding exploration and mastery.
     </p>
 
     <!-- Design Goal -->
     <h3 class="subsection-title">Design Goal</h3>
     <p>
-      My design vision was to create a platformer with fluid and responsive controls, where movement itself feels enjoyable and expressive. Rather than relying on explicit tutorials, the levels are designed to teach mechanics organically through player interaction and discovery. The goal was to create an experience that feels rewarding to master, allowing players to develop genuine skill through practice, experimentation, and exploration.
+      The primary design goal was to create a platformer where movement itself feels expressive and enjoyable. Rather than relying on explicit tutorials, I designed levels to teach mechanics organically through player interaction and experimentation. By encouraging discovery and repetition, the game allows players to develop genuine skill over time, making mastery feel earned rather than instructed.
     </p>
 
     <!-- Core Mechanics -->
     <h3 class="subsection-title">Core Mechanics</h3>
     <ul class="mechanics-list">
-      <li>Precise movement physics with responsive jumping and air control</li>
-      <li>A minimal input combat system that supports expressive play</li>
-      <li>Dynamic camera system that smoothly follows player movement and anticipates jumps</li>
-      <li>Progressive level design that introduces new mechanics gradually</li>
-      <li>Hidden collectibles and secret areas that reward thorough exploration</li>
-      <li>Interactive environmental objects and platforming challenges</li>
-      <li>Smooth animations and visual feedback for player actions</li>
+      <li>Responsive movement physics with precise jumping and air control</li>
+      <li>A minimal-input combat system that supports expressive play</li>
+      <li>A dynamic camera system that anticipates movement and smooths transitions</li>
+      <li>Progressive level design that introduces mechanics incrementally</li>
+      <li>Hidden collectibles and secret areas that reward exploration</li>
+      <li>Interactive environmental elements and platforming challenges</li>
+      <li>Clear animation and visual feedback for player actions</li>
     </ul>
 
     <!-- Iteration & Design Process -->
     <h3 class="subsection-title">Iteration & Design Process</h3>
     <p>
-      Development began with establishing core movement mechanics. I spent significant time tuning jump physics—adjusting gravity, jump height, and air control until movement felt responsive and predictable. This involved extensive playtesting and tweaking values based on how the game actually felt to play, not just how it looked on paper.
+      Development began with establishing the core movement system. I spent significant time tuning jump physics—adjusting gravity, jump height, and air control—until movement felt responsive and predictable. These decisions were guided primarily by play feel rather than realism, informed through repeated testing and adjustment.
     </p>
     <p>
-      The camera system went through multiple iterations. My initial implementation was a simple follow camera, but this felt jarring during jumps and fast movement. I refined it to anticipate player direction and smooth out rapid movements, creating a more cinematic and comfortable viewing experience.
+      The camera system went through several iterations. An initial direct-follow camera felt disorienting during fast movement and jumps, so I introduced directional look-ahead and smoothing. This allowed players to better anticipate upcoming challenges while maintaining visual comfort.
     </p>
     <p>
-      Level design evolved from simple linear stages to more complex layouts with branching paths and hidden areas. Through playtesting with friends and classmates, I identified which challenges felt fair versus frustrating, and adjusted difficulty curves accordingly. I learned that good level design isn't about creating the hardest challenges, but about teaching players mechanics through environmental design and gradually increasing complexity.
+      Level design evolved from simple linear layouts into stages with branching paths and optional challenges. Through playtesting with classmates and friends, I observed where difficulty felt unclear or unfair and adjusted pacing accordingly. This process reinforced the idea that effective level design is not about difficulty alone, but about teaching mechanics through spatial and environmental cues.
     </p>
     <p>
-      Rather than giving the player multiple attack buttons, I chose to design combat around a single attack input combined with movement. This reduces cognitive load while allowing depth to emerge from timing, positioning, and player intent.
-    </p>
-    <p>
-      Different attacks emerge depending on player movement and state. For example, attacking while airborne, standing still, or during movement produces distinct combat outcomes. This encourages players to experiment and utilize dynamic movements to face challenging enemies.
+      Combat design was intentionally kept minimal. Instead of multiple attack buttons, I designed a single attack input that interacts with player movement and state. Different outcomes emerge depending on timing, positioning, and whether the player is grounded or airborne, allowing depth to arise from movement rather than complexity.
     </p>
 
     <!-- Reflection -->
     <h3 class="subsection-title">Reflection</h3>
     <p>
-      This project taught me far more than just programming—it taught me game design as an iterative, player-focused process. Technically, I gained deep experience with physics systems, camera programming, and the importance of precise numerical tuning in creating responsive gameplay. But more importantly, I learned how to design systems that feel good to interact with, not just function correctly.
+      This project taught me that game design is fundamentally an iterative, player-centered process. On a technical level, I gained experience with physics systems, camera behavior, and numerical tuning. More importantly, I learned how small adjustments—timing windows, animation feedback, and pacing—can dramatically change how a game feels to play.
     </p>
     <p>
-      If I were to approach this project again, I would focus more on prototyping multiple mechanics early before committing to implementation. I spent considerable time building features that ultimately didn't enhance the core experience. I also learned the value of playtesting early and often—watching others play revealed issues I would never have noticed myself.
+     Looking back, I would prototype a wider range of mechanics earlier before committing to full implementation. I invested time in features that ultimately did not strengthen the core experience. Playtesting proved especially valuable; observing others play revealed usability and clarity issues I could not identify on my own.
     </p>
     <p>
-      The biggest takeaway is understanding that great game design comes from iteration and refinement, not initial brilliance. The difference between a functional platformer and an enjoyable one lies in hundreds of small details—timing windows, animation feedback, level pacing—that only emerge through careful testing and adjustment. This project transformed my understanding of game development from "making things work" to "making things feel right."
+      The most important lesson was understanding the difference between making systems function and making them feel right. An enjoyable platformer is defined not by a single mechanic, but by the accumulation of countless small design decisions refined through testing. This project reshaped how I approach development, shifting my focus from implementation alone to experience-driven design.
     </p>
 
     <!-- Screenshots -->

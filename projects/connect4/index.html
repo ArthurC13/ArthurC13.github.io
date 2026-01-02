@@ -18,9 +18,9 @@
     <p data-i18n="connect4_title"></p>
 
     <nav class="page-index">
-      <a href="../../">Home</a>
+      <a href="../../" data-i18n="nav_home"></a>
       <a href="../" data-i18n="nav_projects"></a>
-      <a href="../../design-thinking">Design Thinking</a>
+      <a href="../../design-thinking" data-i18n="nav_design_thinking"></a>
       <a href="../../about" data-i18n="nav_about"></a>
     </nav>
   </header>
@@ -41,9 +41,14 @@
       <span data-i18n="connect4_title"></span>
     </h2>
 
+    <!-- Language Notice -->
+    <p class="project-note" data-i18n="project_english_note" style="font-style: italic; color: #666; margin-bottom: 1em;">
+      This project case study is presented in English to preserve design and technical nuance.
+    </p>
+
     <!-- One-Sentence Purpose -->
     <p class="project-overview">
-      This project explores how different decision-making systems influence gameplay behavior and perceived fairness.
+      This project explores how different decision-making systems influence gameplay behavior, challenge, and perceived fairness.
     </p>
 
     <!-- Project Components -->
@@ -51,35 +56,38 @@
 
     <h4>Connect 4</h4>
     <p>
-      A classic two-player connection game where players take turns dropping colored discs into a vertical grid. The goal is to be the first to form a horizontal, vertical, or diagonal line of four discs. This serves as the foundation for comparing different AI decision-making approaches.
+     A classic two-player connection game in which players take turns dropping discs into a vertical grid. The objective is to align four discs horizontally, vertically, or diagonally. This familiar rule set provides a controlled environment for comparing different AI decision-making approaches without introducing mechanical complexity.
     </p>
 
     <h4>Minimax AI</h4>
     <p>
-      A traditional game theory algorithm that evaluates all possible moves to select the mathematically optimal play. It uses alpha-beta pruning for efficiency and can look several moves ahead to ensure the best possible outcome. This creates a deterministic, predictable opponent.
+      A rule-based decision system grounded in game theory, designed to select mathematically optimal moves. Using alpha-beta pruning to evaluate future game states efficiently, the Minimax AI produces consistent and predictable behavior, serving as a baseline for “perfect play.”
     </p>
 
     <h4>NEAT AI (NeuroEvolution of Augmenting Topologies)</h4>
     <p>
-      An evolutionary algorithm that develops neural networks through genetic selection and mutation. Rather than being programmed with optimal strategies, it learns through trial and error, evolving behaviors that may be sub-optimal but more varied and unpredictable.
+      An evolutionary approach in which neural networks develop through selection and mutation rather than explicit optimization. Instead of consistently pursuing optimal outcomes, the NEAT agent evolves varied behaviors through trial and error, resulting in play styles that are less predictable and occasionally sub-optimal.
     </p>
 
     <!-- Design Insight -->
     <h3 class="subsection-title">Design Insight</h3>
     <p>
-      Playing against Minimax felt like facing a calculating machine—it never made mistakes, always chose the optimal move, and created a predictable pattern of play. While challenging, this predictability became somewhat mechanical. Players could anticipate its strategy, and matches followed similar patterns.
+      Playing against the Minimax AI felt like competing against a flawless but mechanical opponent. Its decisions were always optimal, leading to highly consistent match patterns. While technically impressive, this predictability reduced long-term engagement, as players could quickly anticipate its responses.
     </p>
     <p>
-      NEAT, by contrast, behaved more organically. It made surprising moves that weren't always optimal, sometimes setting up elaborate traps or playing defensively when aggression would have been better. These "imperfections" made it feel more human-like and engaging. The unpredictability kept players alert and made each match feel unique.
+      In contrast, the NEAT AI exhibited more organic behavior. It occasionally made unexpected or inefficient moves, sometimes creating opportunities for recovery or sudden shifts in momentum. These imperfections introduced uncertainty and tension, making each match feel distinct and emotionally engaging.
     </p>
     <p>
-      This comparison revealed an important design principle: perfect play isn't always the most engaging play. NEAT's occasional sub-optimal decisions created moments of surprise, relief, and opportunity that made the experience more dynamic. The imperfection wasn't a flaw—it was a feature that increased player engagement and emotional investment.
+      This comparison revealed an important insight: optimal play does not necessarily produce the most engaging experience. NEAT’s inconsistencies created moments of surprise and relief that made victories feel more personal and meaningful. In this context, imperfection enhanced playability rather than diminishing it.
     </p>
 
     <!-- Design Takeaway -->
     <h3 class="subsection-title">Design Takeaway</h3>
     <p>
-      This experiment fundamentally influenced how I approach enemy behavior in my platformer project. Rather than programming enemies to always make optimal decisions, I prioritize behaviors that are readable and predictable enough to feel fair, but imperfect enough to create interesting gameplay moments. An enemy that occasionally "misses" or hesitates feels more alive and creates opportunities for player mastery. The goal isn't to create the hardest possible challenge, but to design opponents that feel satisfying to overcome—where victory feels earned but achievable.
+      This project significantly influenced how I approach enemy behavior and challenge design in my platformer project. Rather than scripting enemies to always act optimally, I focus on creating behaviors that feel readable, fair, and intentionally imperfect. Small moments of hesitation or error make opponents feel more alive and give players room to learn and improve.
+    </p>
+    <p>
+      The objective is not to create the most punishing challenge, but to design encounters that feel satisfying to overcome—where success feels earned through understanding and skill, not memorization or exploitation.
     </p>
 
     <!-- Screenshots -->

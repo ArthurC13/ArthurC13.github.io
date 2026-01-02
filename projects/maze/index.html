@@ -18,9 +18,9 @@
     <p data-i18n="maze_title"></p>
 
     <nav class="page-index">
-      <a href="../../">Home</a>
+      <a href="../../" data-i18n="nav_home"></a>
       <a href="../" data-i18n="nav_projects"></a>
-      <a href="../../design-thinking">Design Thinking</a>
+      <a href="../../design-thinking" data-i18n="nav_design_thinking"></a>
       <a href="../../about" data-i18n="nav_about"></a>
     </nav>
   </header>
@@ -41,35 +41,55 @@
       <span data-i18n="maze_title"></span>
     </h2>
 
+    <!-- Language Notice -->
+    <p class="project-note" data-i18n="project_english_note" style="font-style: italic; color: #666; margin-bottom: 1em;">
+      This project case study is presented in English to preserve design and technical nuance.
+    </p>
+
     <!-- One-Sentence Purpose -->
     <p class="project-overview">
-      This project studies how procedural structure influences player navigation, confusion, and discovery.
+      This project studies how procedural structure influences player navigation, confusion, and discovery within maze-like environments.
     </p>
 
     <!-- Project Components -->
     <h3 class="subsection-title">Project Components</h3>
 
-    <h4>Randomly Generated Maze</h4>
+    <h4>Procedurally Generated Maze</h4>
     <p>
-      A procedural maze generation system that creates unique layouts every time using algorithms like recursive backtracking and depth-first search. Each maze is guaranteed to be solvable, with a clear path from start to finish, but the complexity and layout vary with each generation. This randomness creates an ever-changing environment where players must navigate unfamiliar spaces.
+      A maze generation system that produces a new layout each time while guaranteeing a solvable path from start to finish. Although the overall structure varies between runs, each maze maintains consistent rules regarding corridor width, junction frequency, and progression, allowing me to study how structural variation alone affects player experience.
     </p>
 
     <!-- Player Experience Focus -->
     <h3 class="subsection-title">Player Experience Focus</h3>
     <p>
-      <strong>When did players feel lost?</strong> Players became disoriented in long, featureless corridors with too many similar-looking junctions. Without visual landmarks or memorable spatial features, they lost track of where they'd been and struggled to build a mental map of the space.
+      <strong>When did players feel lost?</strong> Players became disoriented in long, visually uniform corridors with repeated junction patterns. Without distinctive landmarks, it was difficult to form a mental map of the space, leading to confusion and backtracking.
     </p>
     <p>
-      <strong>When did exploration feel rewarding?</strong> Discovery felt most satisfying when players found shortcuts, dead-ends with collectibles, or when they recognized a previously visited area from a new angle. These moments of spatial understanding created a sense of mastery over the maze's complexity.
+      <strong>When did exploration feel rewarding?</strong> Exploration felt most satisfying when players discovered shortcuts, optional dead ends with rewards, or re-encountered familiar areas from new perspectives. These moments created a sense of spatial understanding and mastery.
     </p>
     <p>
-      <strong>What made layouts readable vs frustrating?</strong> Readable mazes had distinct sections with varied corridor lengths and recognizable junction patterns. Frustrating mazes felt homogeneous—every turn looked identical, making navigation feel random rather than skill-based. The key difference was environmental variety that supported spatial memory.
+      <strong>What made layouts readable vs frustrating?</strong> Readable mazes featured varied corridor lengths, distinct junction structures, and recognizable sub-areas. Frustrating layouts felt homogeneous, making navigation feel random rather than skill-based. Environmental variety was the key factor supporting spatial memory.
+    </p>
+
+    <!-- Iteration & Design Focus -->
+    <h3 class="subsection-title">Iteration & Design Focus</h3>
+    <p>
+      Early versions of the generator produced mazes that were technically valid but difficult to navigate. Through playtesting, I observed that excessive uniformity caused players to feel lost quickly, even when the correct path was nearby.
+    </p>
+    <p>
+      In response, I adjusted the generation rules to introduce structural variation, such as longer straight corridors, recognizable junction patterns, and occasional open spaces. These changes did not reduce maze complexity, but they significantly improved readability by giving players visual cues to anchor their spatial understanding.
+    </p>
+    <p>
+      This process reinforced the idea that procedural generation is not just about randomness, but about shaping randomness to support player comprehension.
     </p>
 
     <!-- Design Takeaway -->
     <h3 class="subsection-title">Design Takeaway</h3>
     <p>
-      This informed my level design approach in the platformer, especially in how I guide players subtly without explicit tutorials. I learned that spatial clarity comes from environmental variety and memorable landmarks, not from making paths obvious. In my platformer levels, I apply this by creating visually distinct areas, using environmental cues to hint at hidden paths, and ensuring players can build a mental map through visual consistency. The goal is to let players feel clever for finding the way forward, rather than feeling lost or hand-held.
+      This project influenced how I approach level design in my platformer, particularly in guiding players without explicit instruction. I learned that spatial clarity comes from memorable structure and environmental variation, not from simplifying layouts.
+    </p>
+    <p>
+      In my platformer levels, I apply these principles by creating visually distinct areas, using environmental cues to hint at optional paths, and ensuring players can gradually build a mental map of the space. The goal is to let players feel clever for navigating the environment, rather than feeling lost or overly guided.
     </p>
 
     <!-- Screenshots -->

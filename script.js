@@ -73,6 +73,83 @@ function updateContent() {
   });
 }
 
+// Get query parameter from URL
+function getQueryParameter(param) {
+  const urlParams = new URLSearchParams(window.location.search);
+  return urlParams.get(param);
+}
+
+// Validate and map return parameter to actual path
+function getReturnPagePath(returnValue) {
+  const validReturnPages = {
+    'apply-cityu': '/apply/apply-cityu/',
+    'apply-polyu': '/apply/apply-polyu/',
+    'apply-kyoto-art': '/apply/apply-kyoto-art/',
+    'apply-kyoto-seika': '/apply/apply-kyoto-seika/'
+  };
+
+  return validReturnPages[returnValue] || null;
+}
+
+// Initialize return button if query parameter exists
+function initReturnButton() {
+  const returnParam = getQueryParameter('return');
+
+  if (!returnParam) {
+    return;
+  }
+
+  const returnPath = getReturnPagePath(returnParam);
+
+  if (!returnPath) {
+    console.warn('Invalid return parameter:', returnParam);
+    return;
+  }
+
+  // Create the return link button
+  const link = document.createElement('a');
+  link.href = returnPath;
+  link.className = 'return-to-application';
+  link.id = 'return-button';
+
+  // Create the text span with i18n attribute
+  const span = document.createElement('span');
+  span.setAttribute('data-i18n', 'return_to_application');
+
+  link.appendChild(span);
+
+  // Insert into body (fixed position, no need for specific parent)
+  document.body.appendChild(link);
+
+  // Apply translation to the new button
+  updateContent();
+}
+
+// Propagate return parameter to all internal navigation links
+function propagateReturnParameter() {
+  const returnParam = getQueryParameter('return');
+
+  if (!returnParam) {
+    return;
+  }
+
+  // Select all internal navigation links
+  const internalLinks = document.querySelectorAll('nav.page-index a, a.btn, a.project-card-link');
+
+  internalLinks.forEach(link => {
+    const href = link.getAttribute('href');
+
+    // Skip external links, anchors, and links that already have return param
+    if (!href || href.startsWith('#') || href.startsWith('http') || href.includes('?return=')) {
+      return;
+    }
+
+    // Append return parameter
+    const separator = href.includes('?') ? '&' : '?';
+    link.setAttribute('href', href + separator + 'return=' + returnParam);
+  });
+}
+
 // Back to top button functionality
 function initBackToTop() {
   const backToTopButton = document.getElementById('backToTop');
@@ -96,4 +173,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Initialize back to top button
   initBackToTop();
+
+  // Initialize return button in top left corner
+  initReturnButton();
+
+  // Propagate return parameter to all links
+  propagateReturnParameter();
 });
