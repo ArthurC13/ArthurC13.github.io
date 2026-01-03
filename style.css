@@ -75,11 +75,11 @@ header p {
   box-shadow: 0 3px 8px rgba(102, 126, 234, 0.3) !important;
 }
 
-/* Return to Application button in top left */
+/* Return to Application button in bottom left */
 .return-to-application {
   position: fixed;
-  top: 20px;
-  left: 20px;
+  bottom: 30px;
+  left: 30px;
   padding: 8px 16px;
   border: 2px solid #ffc107;
   background: white;
@@ -553,8 +553,8 @@ html {
   }
 
   .return-to-application {
-    top: 15px;
-    left: 15px;
+    bottom: 20px;
+    left: 20px;
     padding: 6px 12px;
     font-size: 12px;
   }
